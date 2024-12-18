@@ -54,8 +54,18 @@ public class PlayerMovement: MonoBehaviour {
     void Move() {
         if(verticalDir<0 && isJumping==false) {
             rb.velocity=new Vector2(horizontalDir*moveSpeed/crouchSlowMultiplier, rb.velocity.y);
+            if(!crouchingCollider.isActiveAndEnabled && standingCollider.isActiveAndEnabled) {
+                Debug.Log("check works");
+                crouchingCollider.enabled=true;
+                standingCollider.enabled=false;
+            }
         } else {
             rb.velocity=new Vector2(horizontalDir*moveSpeed, rb.velocity.y);
+            if(crouchingCollider.isActiveAndEnabled && !standingCollider.isActiveAndEnabled) {
+                Debug.Log("check works2");
+                crouchingCollider.enabled=false;
+                standingCollider.enabled=true;
+            }
         }
         
     }
