@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ParallaxBackground: MonoBehaviour {
-    [SerializeField] private Vector2 parallaxEffectMultiplier; //0-1 while higher value means slower movement
+    [SerializeField] private Vector2 parallaxEffectMultiplier; //0-1 higher value means slower movement
     private Transform cameraTransform;
     private Vector3 lastCameraPosition;
     private float textureUnitSizeX;

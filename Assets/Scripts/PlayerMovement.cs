@@ -6,28 +6,37 @@ public class PlayerMovement: MonoBehaviour {
 
     public float horizontalDir;
     public float verticalDir;
-    public bool isJumping = false;
+    public bool isAirborne; //used to communicate with PlayerAnimator
     [SerializeField] float moveSpeed;
     [SerializeField] int jumpForce = 7;
     [SerializeField] float crouchSlowMultiplier = 1.5f; //adjusts moveSpeed when player crouches;
     [SerializeField] Collider2D standingCollider;
     [SerializeField] Collider2D crouchingCollider;
     private bool isTouchingGround; //used for jump resets and ground collider child;
-    Rigidbody2D rb;
+    private bool isJumping = false;
+    private Rigidbody2D rb;
+    private PlayerAttack pAttack;
 
-
-    //Collider
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
 
-    void Start() {
+    public bool isCrouching(){
+        if(verticalDir<0 && isJumping==false)
+            return true;
+        else
+            return false;
+    }
+
+    void Awake() {
         rb=GetComponent<Rigidbody2D>();
+        pAttack=GetComponent<PlayerAttack>();
     }
 
     private void Update() {
         InputManagement();
         CheckForJump();
         CheckForGround();
+        SwitchDirections();
     }
 
     void FixedUpdate() {
@@ -42,27 +51,28 @@ public class PlayerMovement: MonoBehaviour {
 
     //Player jumps only if it is not jumping already AND Y input is pressed
     void CheckForJump() {
-        if(isJumping==false&&verticalDir>0&&isTouchingGround==true) {
+        if(isJumping==false && verticalDir>0 && isTouchingGround==true) {
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce), ForceMode2D.Impulse);
             isJumping=true;
             isTouchingGround=false;
-            GetComponent<Animator>().SetBool("isAirborne", true);
+            isAirborne=true;
         }
     }
 
     //Uses previously set input data to set player's velocity
     void Move() {
-        if(verticalDir<0 && isJumping==false) {
+        if(isCrouching()) {
+            //move slower while crouching
             rb.velocity=new Vector2(horizontalDir*moveSpeed/crouchSlowMultiplier, rb.velocity.y);
+            //switches colliders when crouching
             if(!crouchingCollider.isActiveAndEnabled && standingCollider.isActiveAndEnabled) {
-                Debug.Log("check works");
                 crouchingCollider.enabled=true;
                 standingCollider.enabled=false;
             }
         } else {
             rb.velocity=new Vector2(horizontalDir*moveSpeed, rb.velocity.y);
+            //switches colliders when standing
             if(crouchingCollider.isActiveAndEnabled && !standingCollider.isActiveAndEnabled) {
-                Debug.Log("check works2");
                 crouchingCollider.enabled=false;
                 standingCollider.enabled=true;
             }
@@ -78,10 +88,20 @@ public class PlayerMovement: MonoBehaviour {
         }
     }
 
+    //Flips player's gameObject including hitboxes
+    void SwitchDirections(){
+    if(horizontalDir < 0 && transform.localScale.x > 0){
+        transform.localScale*=new Vector2(-1, 1);
+    }else if(horizontalDir > 0 && transform.localScale.x < 0){
+        transform.localScale*=new Vector2(-1, 1);
+    }
+    }
+
+    //Lets Animator know it can switch animations
     private void OnCollisionEnter2D(Collision2D collision) {
         if(isJumping==true) {
             isJumping=false;
-            GetComponent<Animator>().SetBool("isAirborne", false);
+            isAirborne=false;
         }
     }
 }
