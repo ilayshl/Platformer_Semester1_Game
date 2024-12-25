@@ -23,7 +23,8 @@ public class EnemyAnimation : MonoBehaviour
         //Walk animation
         //anim.SetBool("isMoving", eMovement.moveSpeed!=0);
         //Walk animation direction
-        anim.SetFloat("xVelocity", rb.velocity.x);
+        anim.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
+        
         //Attack animations
         //anim.SetBool("isAttacking", eAttack.isAttacking);
     }
@@ -34,6 +35,6 @@ public class EnemyAnimation : MonoBehaviour
     }
 
     public void DamageEnemyAnimation(GameObject enemy) {
-        anim.SetBool("isDead", true);
+        anim.SetBool("isHurt", true);
     }
 }
