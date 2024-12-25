@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    [SerializeField] const int totalHealth = 5;
-    [SerializeField] int enemyDamage = 3;
-    private int currentHealth;
+    public int currentHealth;
+    [SerializeField] const int totalHealth = 3;
+    [SerializeField] int enemyDamage = 2;
 
     private EnemyAnimation eAnimation;
     void Awake()
@@ -23,11 +23,6 @@ public class EnemyManager : MonoBehaviour
 
     public void EnemyHit(int damage) {
         currentHealth-=damage;
-        if(currentHealth<=0) {
-            eAnimation.KillEnemyAnimation(gameObject);
-        } else {
-            eAnimation.DamageEnemyAnimation(gameObject);
+            eAnimation.DamageEnemyAnimation(gameObject, currentHealth);
         }
     }
-
-}

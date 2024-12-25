@@ -16,7 +16,7 @@ public class PlayerAttack: MonoBehaviour {
 
     private Animator anim;
 
-    public int hitLands() {
+    public int hitDamage() {
         if(comboCounter<3) {
             return attackDamage;
         } else {

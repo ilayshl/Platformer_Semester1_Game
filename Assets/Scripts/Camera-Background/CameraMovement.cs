@@ -11,7 +11,7 @@ public class CameraMovement : MonoBehaviour
     {
         offset = new Vector3(0, 0, -10);
     }
-    void Update()
+    void LateUpdate()
     {
         transform.position = target.position + offset;
     }
