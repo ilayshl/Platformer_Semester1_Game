@@ -3,8 +3,8 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public int currentHealth;
+    public bool isHurt;
     [SerializeField] const int totalHealth = 3;
-    [SerializeField] int enemyDamage = 2;
 
     private EnemyAnimation eAnimation;
     void Awake()
@@ -15,14 +15,14 @@ public class EnemyManager : MonoBehaviour
     private void Start() {
         currentHealth=totalHealth;
     }
-
-    void Update()
-    {
-        
-    }
-
     public void EnemyHit(int damage) {
+        isHurt=true;
         currentHealth-=damage;
             eAnimation.DamageEnemyAnimation(gameObject, currentHealth);
+            Invoke("ResetIsHurt", 0.5f);
+        }
+
+        void ResetIsHurt(){
+            isHurt=false;
         }
     }
