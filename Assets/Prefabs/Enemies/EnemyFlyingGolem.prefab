@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1982161339946739969}
   - component: {fileID: 7087018779025485644}
   m_Layer: 0
-  m_Name: EnemyGolemBlue 1
+  m_Name: EnemyFlyingGolem
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1513114065, guid: 1c8801fb42336ec4d98b50948dfff16b, type: 3}
+  m_Sprite: {fileID: 511612047, guid: 0f604b126e7e0b246b0ebeac351ef2f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 8889726271218920584}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2081b8d09b10524ab3de8b77c547add, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2b503fd494c7783458b34099885d7b44, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -125,10 +125,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 20
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 6200000, guid: 37d50f9ed694eb3408fd7abea44d2b93, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -172,18 +172,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017249733, y: 0.35948125}
+  m_Offset: {x: -0.0055558532, y: -0.2673138}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.7916667, y: 0.7916667}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.875, y: 1.3333334}
     newSize: {x: 0.7916667, y: 0.7916667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68488485, y: 0.7089985}
+  m_Size: {x: 0.6614971, y: 0.6996433}
   m_EdgeRadius: 0
 --- !u!114 &8932005505148164763
 MonoBehaviour:
@@ -268,16 +268,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.49357936, y: 0.007237464}
+  m_Offset: {x: 0.49357936, y: -0.6289128}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.7916667, y: 0.7916667}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.875, y: 1.3333334}
     newSize: {x: 0.7916667, y: 0.7916667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.06148237, y: 0.36546475}
+  m_Size: {x: 0.06148237, y: 0.4403062}
   m_EdgeRadius: 0
