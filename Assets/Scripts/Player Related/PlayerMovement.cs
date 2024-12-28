@@ -21,14 +21,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform groundCheckCollider;
     [SerializeField] LayerMask groundLayer;
 
-    public bool isCrouching()
-    {
-        if (verticalDir < 0 && isTouchingGround)
-            return true;
-        else
-            return false;
-    }
-
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
         canMove = false;
     }
 
+    private void Start()
+    {
+        rb.velocity = new Vector3(0, -7, 0);
+    }
 
     private void Update()
     {
@@ -52,6 +48,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (pCollider.isDead || !canMove) { return; }
         Move();
+    }
+
+    public bool IsCrouching()
+    {
+        if (verticalDir < 0 && isTouchingGround)
+            return true;
+        else
+            return false;
     }
 
     //Passes current input information to other methods
@@ -75,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
     //Uses previously set input data to set player's velocity
     void Move()
     {
-        if (isCrouching())
+        if (IsCrouching())
         {
             //move slower while crouching
             rb.velocity = new Vector2(horizontalDir * moveSpeed / crouchSlowMultiplier, rb.velocity.y);

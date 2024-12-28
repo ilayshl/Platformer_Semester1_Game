@@ -22,7 +22,7 @@ public class Playeranim: MonoBehaviour {
         //Walk animation
         anim.SetBool("isMoving", pMovement.horizontalDir!=0);
         //Crouch animation
-        anim.SetBool("isCrouching", pMovement.isCrouching());
+        anim.SetBool("isCrouching", pMovement.IsCrouching());
         //Walk animation direction
         anim.SetFloat("yVelocity", rb.velocity.y);
         //Jump animation

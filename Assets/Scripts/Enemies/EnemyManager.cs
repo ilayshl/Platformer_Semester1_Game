@@ -19,7 +19,7 @@ public class EnemyManager : MonoBehaviour
         isHurt=true;
         currentHealth-=damage;
             eAnimation.DamageEnemyAnimation(gameObject, currentHealth);
-            Invoke("ResetIsHurt", 0.6f);
+            Invoke("ResetIsHurt", 0.4f);
         }
 
         void ResetIsHurt(){

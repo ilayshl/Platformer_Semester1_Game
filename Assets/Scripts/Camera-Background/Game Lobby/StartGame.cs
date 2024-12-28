@@ -13,7 +13,7 @@ public class StartGame : MonoBehaviour
     void Start()
     {
         sceneCamera.SetTarget(gameObject, new Vector3(0, 0, 0));
-        Invoke("SpawnPlayer", 2);
+        Invoke("SpawnPlayer", 1.7f);
     }
 
     void SpawnPlayer() {
