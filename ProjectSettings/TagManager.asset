@@ -7,8 +7,8 @@ TagManager:
   - Ground
   - Enemy
   - Player Attack
-  - Spikes
   - Used Ground
+  - Sound
   layers:
   - Default
   - TransparentFX

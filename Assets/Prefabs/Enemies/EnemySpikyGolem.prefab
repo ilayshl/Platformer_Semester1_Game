@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1982161339946739969}
   - component: {fileID: 7087018779025485644}
   m_Layer: 0
-  m_Name: EnemyGolemBlue
+  m_Name: EnemySpikyGolem
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,12 +81,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1513114065, guid: 1c8801fb42336ec4d98b50948dfff16b, type: 3}
+  m_Sprite: {fileID: 1628101407, guid: 61533e517af7eed42bd12c3a10ce92b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7916667, y: 0.7916667}
+  m_Size: {x: 1.875, y: 1.3333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 8889726271218920584}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2081b8d09b10524ab3de8b77c547add, type: 2}
+  m_Controller: {fileID: 9100000, guid: ae37904c6984a53489923e6edb6d7a2a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,7 +138,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &7458821280402815210
 BoxCollider2D:
@@ -172,18 +172,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.017249733, y: 0.35948125}
+  m_Offset: {x: -0.06, y: -0.31}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.7916667, y: 0.7916667}
-    newSize: {x: 0.7916667, y: 0.7916667}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.875, y: 1.3333334}
+    newSize: {x: 1.875, y: 1.3333334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68488485, y: 0.7089985}
+  m_Size: {x: 0.8, y: 0.7089985}
   m_EdgeRadius: 0
 --- !u!114 &8932005505148164763
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc06a781b87bdaf47a88febfb8b3fc64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -30
+  moveSpeed: -40
 --- !u!114 &2143432790625530993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,12 +268,12 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.49357936, y: 0.007237464}
+  m_Offset: {x: 0.44, y: -0.68}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.7916667, y: 0.7916667}
-    newSize: {x: 0.7916667, y: 0.7916667}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.875, y: 1.3333334}
+    newSize: {x: 1.875, y: 1.3333334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

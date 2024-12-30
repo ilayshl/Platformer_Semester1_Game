@@ -4,6 +4,7 @@ public class PlayerAttack: MonoBehaviour {
     public int comboCounter;
     public bool isAttacking = false;
     [SerializeField] private GameObject attacksObject;
+    [SerializeField] AudioClip[] attackSounds;
     private Collider2D jabHitbox, crossHitbox;
     private int attackDamage=1;
     private float hitCooldown = 0.4f;
@@ -13,8 +14,7 @@ public class PlayerAttack: MonoBehaviour {
     private bool isMidCombo = false;
 
     private PlayerCollider pCollider;
-
-    private Animator anim;
+    private PlayerMovement pMovement;
 
     public int hitDamage() {
         if(comboCounter<3) {
@@ -25,8 +25,8 @@ public class PlayerAttack: MonoBehaviour {
     }
 
     void Awake() {
-        anim=GetComponent<Animator>();
         pCollider=GetComponent<PlayerCollider>();
+        pMovement=GetComponent<PlayerMovement>();
         jabHitbox=attacksObject.GetComponent<CapsuleCollider2D>();
         crossHitbox=attacksObject.GetComponent<BoxCollider2D>();
     }
@@ -34,9 +34,10 @@ public class PlayerAttack: MonoBehaviour {
     void Update() {
         if(Input.GetKeyDown(KeyCode.Space)) {
             if(pCollider.isHurt==true || pCollider.isDead==true) { return; }
-            if(!isAttacking&&anim.GetBool("isAirborne")==false) {
+            if(!isAttacking&&pMovement.isAirborne==false) {
                 isAttacking=true;
                 isMidCombo=true;
+                //audioManager.PlaySound(attackSounds[comboCounter]);
                 comboCounter++;
                 resetTimer=0;
                 if(comboCounter<3) {

@@ -1,5 +1,5 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollider : MonoBehaviour
 {
@@ -83,6 +83,6 @@ public class PlayerCollider : MonoBehaviour
         isDead = false;
         gameObject.transform.position = Vector2.zero;
         healthPoints = totalHealth;
-        //Application.LoadLevel();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -113,10 +113,10 @@ TextureImporter:
       name: Golem_1_walk_0
       rect:
         serializedVersion: 2
-        x: 29
+        x: 0
         y: 0
-        width: 31
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a091050e8c1a2604bbb431071af8af0d
-      internalID: 555600900
+      spriteID: d0252e662d8ff8c4e922042b9e35b521
+      internalID: -511302332
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Golem_1_walk_1
       rect:
         serializedVersion: 2
-        x: 119
+        x: 90
         y: 0
-        width: 32
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f194f7a4b575150469c2bc2a836f0f87
-      internalID: -469022946
+      spriteID: 4757bb37669dece40a80ed6edd39756d
+      internalID: -1484199889
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Golem_1_walk_2
       rect:
         serializedVersion: 2
-        x: 209
+        x: 180
         y: 0
-        width: 34
-        height: 39
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66ef6cd24da2b944b8e1dbe1ce59f03c
-      internalID: -1233983863
+      spriteID: 91aebcbf56827c143b1f3f98f10e9c7c
+      internalID: 1450334440
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Golem_1_walk_3
       rect:
         serializedVersion: 2
-        x: 298
+        x: 270
         y: 0
-        width: 35
-        height: 40
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a023229c4863c84383384b062a07c71
-      internalID: 1680459440
+      spriteID: 04c9232068564b94293b932d6505507c
+      internalID: 941215674
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: Golem_1_walk_4
       rect:
         serializedVersion: 2
-        x: 385
+        x: 360
         y: 0
-        width: 39
-        height: 39
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08406194a57f1844989209b508c115a8
-      internalID: -302053665
+      spriteID: 2ec7b744db14fab41a81b1f1b818f167
+      internalID: 946788729
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: Golem_1_walk_5
       rect:
         serializedVersion: 2
-        x: 474
+        x: 450
         y: 0
-        width: 42
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa3f2f4366939054fadadf7e162d7b40
-      internalID: 2144270974
+      spriteID: 4fa9cfa419e8b0f47b7118bbaf09be33
+      internalID: -459975052
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: Golem_1_walk_6
       rect:
         serializedVersion: 2
-        x: 567
+        x: 540
         y: 0
-        width: 38
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df25194b11992cc4a8030a8b011e463f
-      internalID: 1562471338
+      spriteID: a219636d3055b554ea070cfc8770d4f5
+      internalID: -1253240225
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: Golem_1_walk_7
       rect:
         serializedVersion: 2
-        x: 658
+        x: 630
         y: 0
-        width: 36
-        height: 39
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df97db2eb231f2a49ab16097945c1736
-      internalID: 219432910
+      spriteID: afb74bf1e8068db40b8690f48397cdb2
+      internalID: -1699582028
       vertices: []
       indices: 
       edges: []
@@ -281,10 +281,10 @@ TextureImporter:
       name: Golem_1_walk_8
       rect:
         serializedVersion: 2
-        x: 749
+        x: 720
         y: 0
-        width: 33
-        height: 40
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ef5fca73680534a953fcb4647ab986
-      internalID: -1285087400
+      spriteID: 92d05e37bf60bc54fbad230d882ddfb8
+      internalID: 1296810781
       vertices: []
       indices: 
       edges: []
@@ -302,10 +302,10 @@ TextureImporter:
       name: Golem_1_walk_9
       rect:
         serializedVersion: 2
-        x: 839
+        x: 810
         y: 0
-        width: 32
-        height: 39
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d58ac04c3badc784eb0aee2c0ad15749
-      internalID: -789254612
+      spriteID: f3eb3d1c4a3afce44a019f838cf75e88
+      internalID: 96251275
       vertices: []
       indices: 
       edges: []
@@ -330,16 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Golem_1_walk_0: 555600900
-      Golem_1_walk_1: -469022946
-      Golem_1_walk_2: -1233983863
-      Golem_1_walk_3: 1680459440
-      Golem_1_walk_4: -302053665
-      Golem_1_walk_5: 2144270974
-      Golem_1_walk_6: 1562471338
-      Golem_1_walk_7: 219432910
-      Golem_1_walk_8: -1285087400
-      Golem_1_walk_9: -789254612
+      Golem_1_walk_0: -511302332
+      Golem_1_walk_1: -1484199889
+      Golem_1_walk_2: 1450334440
+      Golem_1_walk_3: 941215674
+      Golem_1_walk_4: 946788729
+      Golem_1_walk_5: -459975052
+      Golem_1_walk_6: -1253240225
+      Golem_1_walk_7: -1699582028
+      Golem_1_walk_8: 1296810781
+      Golem_1_walk_9: 96251275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

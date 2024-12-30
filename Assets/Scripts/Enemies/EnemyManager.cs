@@ -15,6 +15,7 @@ public class EnemyManager : MonoBehaviour
     private void Start() {
         currentHealth=totalHealth;
     }
+    //
     public void EnemyHit(int damage) {
         isHurt=true;
         currentHealth-=damage;

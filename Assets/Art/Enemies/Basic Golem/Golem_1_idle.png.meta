@@ -113,10 +113,10 @@ TextureImporter:
       name: Golem_1_idle_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 0
         y: 0
-        width: 38
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc6b229f5174c64184873b15a9dbb88
-      internalID: 1513114065
+      spriteID: 0add8b83cdf23d14fb738c74049ce2cd
+      internalID: 2047506455
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Golem_1_idle_1
       rect:
         serializedVersion: 2
-        x: 116
+        x: 90
         y: 0
-        width: 38
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daaf583b0a095c743b2223a6edc812dd
-      internalID: 67588464
+      spriteID: 4e6daa5b520abe84d9bf9d8eb34b2241
+      internalID: -1476422309
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Golem_1_idle_2
       rect:
         serializedVersion: 2
-        x: 206
+        x: 180
         y: 0
-        width: 38
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03d84b5b86baea4e924979d86218f6e
-      internalID: -883324281
+      spriteID: 85f51dbef0c045c46b262e5585f1ce91
+      internalID: -1719061311
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Golem_1_idle_3
       rect:
         serializedVersion: 2
-        x: 296
+        x: 270
         y: 0
-        width: 38
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f27044f5d6824d742929e9aeb7cede37
-      internalID: -521187537
+      spriteID: 6eee03e22465787459f40c77cee17a8d
+      internalID: 234114617
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: Golem_1_idle_4
       rect:
         serializedVersion: 2
-        x: 386
+        x: 360
         y: 0
-        width: 39
-        height: 36
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0139c12acd065f84f80068ea683e6849
-      internalID: 1038593521
+      spriteID: bbf1d0250bad9d949b1c454d5c8ed722
+      internalID: 1101274679
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: Golem_1_idle_5
       rect:
         serializedVersion: 2
-        x: 476
+        x: 450
         y: 0
-        width: 39
-        height: 36
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce2a61940b431ca4594de71df6555e21
-      internalID: 1049861210
+      spriteID: 6b74bfaf1df4d6742b2581666f2a4ef4
+      internalID: 183646891
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: Golem_1_idle_6
       rect:
         serializedVersion: 2
-        x: 566
+        x: 540
         y: 0
-        width: 38
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bf5778a93e3d17419f7e18dbaffd479
-      internalID: 49840485
+      spriteID: 6bfe488dda0233a4e8f032703011c1f0
+      internalID: 1866228646
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: Golem_1_idle_7
       rect:
         serializedVersion: 2
-        x: 656
+        x: 630
         y: 0
-        width: 38
-        height: 37
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d89fcf58ceb6f438fbf6337ff33af0
-      internalID: 1586798805
+      spriteID: d85245254e0d39849b886aa0ff3f0a2a
+      internalID: -1782437009
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Golem_1_idle_0: 1513114065
-      Golem_1_idle_1: 67588464
-      Golem_1_idle_2: -883324281
-      Golem_1_idle_3: -521187537
-      Golem_1_idle_4: 1038593521
-      Golem_1_idle_5: 1049861210
-      Golem_1_idle_6: 49840485
-      Golem_1_idle_7: 1586798805
+      Golem_1_idle_0: 2047506455
+      Golem_1_idle_1: -1476422309
+      Golem_1_idle_2: -1719061311
+      Golem_1_idle_3: 234114617
+      Golem_1_idle_4: 1101274679
+      Golem_1_idle_5: 183646891
+      Golem_1_idle_6: 1866228646
+      Golem_1_idle_7: -1782437009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

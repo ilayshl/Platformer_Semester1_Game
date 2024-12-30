@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bea1786bb3be05444a483a9080fa9fe8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4b0ab86e725ef2e47a5e1537f3329afd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -47,7 +47,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e87af3d6b5e517142b2cf528e086eefa, type: 2}
+  m_Motion: {fileID: 7400000, guid: 73c9ba75c5d6cbc4aaa7e1ac519b2a60, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -99,12 +99,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: isAttacking
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
   - m_Name: isHurt
     m_Type: 4
     m_DefaultFloat: 0
@@ -151,7 +145,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9f9a2bbc69e9c2c40b0351a3bfbde02e, type: 2}
+  m_Motion: {fileID: 7400000, guid: f63bd647c7e11d64db0772cffa87d5b1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -255,7 +249,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7eca02231e816184b90bea169f4dd4f7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3fbec01a3bb95be429416a542e283e56, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

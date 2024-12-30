@@ -113,10 +113,10 @@ TextureImporter:
       name: Golem_1_hurt_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 0
         y: 0
-        width: 38
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 965e826f509e3ca41b088c056c26513b
-      internalID: -462510613
+      spriteID: 00d4b599aa8798f4abf98cab84c6a9fb
+      internalID: 1655244912
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Golem_1_hurt_1
       rect:
         serializedVersion: 2
-        x: 115
+        x: 90
         y: 0
-        width: 37
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53d56fcc7ba4d3046b4cf4d1dd1ba734
-      internalID: -2054093883
+      spriteID: 3ab608515d0d1384e98a7f439eaecdf1
+      internalID: 702011149
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Golem_1_hurt_2
       rect:
         serializedVersion: 2
-        x: 206
+        x: 180
         y: 0
-        width: 37
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a70bc95d21e8b468a5d4a24b24be82
-      internalID: -598211132
+      spriteID: 161014dc8b0f2b34f95c3401422f3aaf
+      internalID: -1748549294
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Golem_1_hurt_3
       rect:
         serializedVersion: 2
-        x: 296
+        x: 270
         y: 0
-        width: 38
-        height: 38
+        width: 90
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1887a7ec700bbf84aabc468cb4a58866
-      internalID: 2126010435
+      spriteID: f1144348341c6994cbf0d6101d11100a
+      internalID: 109671533
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Golem_1_hurt_0: -462510613
-      Golem_1_hurt_1: -2054093883
-      Golem_1_hurt_2: -598211132
-      Golem_1_hurt_3: 2126010435
+      Golem_1_hurt_0: 1655244912
+      Golem_1_hurt_1: 702011149
+      Golem_1_hurt_2: -1748549294
+      Golem_1_hurt_3: 109671533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
