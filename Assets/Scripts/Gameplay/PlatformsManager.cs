@@ -12,20 +12,13 @@ public class PlatformsManager : MonoBehaviour
         Invoke("CreateStartingPlatform", 1.5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            Vector3 offset = new Vector3(10, 2, 0);
-            var newPlatform = Instantiate(platforms[Random.Range(0, platforms.Length)], gridParent);
-            //newPlatform.transform.position += offset;
+            CreatePlatform(platforms, transform.position, gridParent);
+            other.gameObject.tag = "Used Ground";
         }
     }
 
@@ -33,15 +26,35 @@ public class PlatformsManager : MonoBehaviour
     {
         var newPlatform = Instantiate(platforms[Random.Range(0, platforms.Length)], gridParent);
         newPlatform.transform.position = new Vector3(-3, 0, 0);
+        CheckForEnemies(newPlatform.transform);
 
-        foreach(Transform enemy in newPlatform.transform){
-            Debug.Log("check");
-     //       Instantiate enemy and delete placeholder
-        }
     }
 
-    void CreatePlatform(GameObject platform, Vector2 position, GameObject parentObject)
+    int GetRandomIndex(GameObject[] array)
     {
+        int i = Random.Range(0, array.Length);
+        return i;
+    }
+    void CheckForEnemies(Transform platform)
+    {
+        foreach (Transform enemy in platform.transform)
+        {
+            if (enemy.gameObject.CompareTag("Enemy"))
+            {
+                CreateEnemy(enemies, enemy.position);
+                Destroy(enemy.gameObject);
+            }
+        }
+    }
+    void CreateEnemy(GameObject[] source, Vector3 position)
+    {
+        Instantiate(source[GetRandomIndex(source)], position, Quaternion.identity);
+    }
 
+    void CreatePlatform(GameObject[] source, Vector3 position, Transform parentTransform)
+    {
+        var newPlatform = Instantiate(source[GetRandomIndex(source)], parentTransform);
+        newPlatform.transform.position = position;
+        CheckForEnemies(newPlatform.transform);
     }
 }
