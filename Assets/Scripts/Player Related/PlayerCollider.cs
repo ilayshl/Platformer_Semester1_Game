@@ -3,27 +3,23 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollider : MonoBehaviour
 {
-    public int healthPoints;
     public bool isDead = false;
     public bool isHurt = false;
     [SerializeField] Collider2D crouchingCollider, standingCollider;
     [SerializeField] private float hitCooldown = 0.4f;
-    private int totalHealth = 6;
 
     private SpriteRenderer sRenderer;
     private Rigidbody2D rb;
+    private PlayerInfo pInfo;
 
     private void Awake()
     {
         sRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        pInfo = GetComponent<PlayerInfo>();
     }
 
-    private void Start()
-    {
-        healthPoints = totalHealth;
-    }
-
+    //Takes damage from an enemy
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -57,9 +53,9 @@ public class PlayerCollider : MonoBehaviour
     void TakeHit()
     {
         isHurt = true;
-        healthPoints--;
-        Debug.Log(healthPoints);
-        if (healthPoints <= 0)
+        pInfo.currentHealth--;
+        Debug.Log(pInfo.currentHealth);
+        if (pInfo.currentHealth <= 0)
         {
             PlayerDeath();
             Debug.Log("You're dead!");
@@ -75,14 +71,13 @@ public class PlayerCollider : MonoBehaviour
     {
         isDead = true;
         rb.velocity = Vector2.zero;
-        Invoke("RestartScene", 3f);
+        Invoke("RestartScene", 5f);
     }
 
     void RestartScene()
     {
         isDead = false;
         gameObject.transform.position = Vector2.zero;
-        healthPoints = totalHealth;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -36,17 +36,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.R)) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        } else if(Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+
         CheckForGround();
         if (pCollider.isDead || !canMove) { return; }
         InputManagement();
         CheckForJump();
         SwitchDirections();
 
-        if(Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        } else if(Input.GetKeyDown(KeyCode.Escape)) {
-            Application.Quit();
-        }
     }
 
     void FixedUpdate()
@@ -142,4 +143,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void PlayerWon(int enemiesSlain, int score) {
+        canMove=false;
+        Debug.Log("Congratulations! You won! (better winning player feedback wip)");
+        Debug.Log($"You've reached {score} units high!");
+        Debug.Log($"Over this journey, you've slain {enemiesSlain} enemies.");
+        Debug.Log("Press 'R' to play again or 'ESC' to quit the climb.");
+    }
 }

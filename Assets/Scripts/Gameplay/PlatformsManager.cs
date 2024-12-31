@@ -21,6 +21,7 @@ public class PlatformsManager : MonoBehaviour
         }
     }
 
+    //Creates the starting random platform below the player
     void CreateStartingPlatform()
     {
         var newPlatform = Instantiate(platforms[Random.Range(0, platforms.Length)], gridParent);
@@ -34,6 +35,8 @@ public class PlatformsManager : MonoBehaviour
         int i = Random.Range(0, array.Length);
         return i;
     }
+
+    //Replaces each placeholder enemym with an actual enemy
     void CheckForEnemies(Transform platform)
     {
         foreach (Transform enemy in platform.transform)

@@ -15,6 +15,7 @@ public class PlayerAttack: MonoBehaviour {
 
     private PlayerCollider pCollider;
     private PlayerMovement pMovement;
+    private AudioSource audioSource;
 
     public int hitDamage() {
         if(comboCounter<3) {
@@ -29,6 +30,7 @@ public class PlayerAttack: MonoBehaviour {
         pMovement=GetComponent<PlayerMovement>();
         jabHitbox=attacksObject.GetComponent<CapsuleCollider2D>();
         crossHitbox=attacksObject.GetComponent<BoxCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -37,7 +39,7 @@ public class PlayerAttack: MonoBehaviour {
             if(!isAttacking&&pMovement.isAirborne==false) {
                 isAttacking=true;
                 isMidCombo=true;
-                //audioManager.PlaySound(attackSounds[comboCounter]);
+                audioSource.PlayOneShot(attackSounds[comboCounter]);
                 comboCounter++;
                 resetTimer=0;
                 if(comboCounter<3) {
@@ -68,6 +70,7 @@ public class PlayerAttack: MonoBehaviour {
         crossHitbox.enabled=false;
     }
 
+    //The maximum delay between continuous attacks
     void AttackWindowTimer() {
         resetTimer+=Time.deltaTime;
         if(resetTimer>=attackWindowLimiter) {
